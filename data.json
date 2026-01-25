@@ -1,0 +1,29 @@
+{
+  "diagnoses": [
+    {"code": "M511", "name": "요추디스크"},
+    {"code": "M501", "name": "경추디스크"},
+    {"code": "M111", "name": "외측상과염"}
+  ],
+  "exercises": [
+    {"id": 1, "title": "가상 운동 1", "description": "가상의 스트레칭 동작"},
+    {"id": 2, "title": "가상 운동 2", "description": "가상의 근력 강화 동작"},
+    {"id": 3, "title": "가상 운동 3", "description": "가상의 관절 가동성 동작"},
+    {"id": 4, "title": "가상 운동 4", "description": "가상의 코어 안정화 동작"},
+    {"id": 5, "title": "가상 운동 5", "description": "가상의 이완 동작"}
+  ],
+  "patients": [
+    {
+      "id": "patient-001",
+      "name": "홍길동",
+      "active": true,
+      "start_date": "2024-01-01",
+      "end_date": "2024-12-31",
+      "diagnosis_codes": ["M511"]
+    }
+  ],
+  "diagnosis_exercise_map": {
+    "M511": [1, 4],
+    "M501": [2],
+    "M111": [3, 5]
+  }
+}
